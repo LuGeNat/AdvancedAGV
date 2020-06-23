@@ -17,14 +17,21 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section {
-                    Text("AGV: \(session.agv.name)")
-                    Text("Current Battery Temperature is: \(session.agv.temperature)")
-                    Text("Time checked: \(session.agv.timestamp)")
+                    Text("AGV name: \(session.agv.name)")
+                }
+                Section {
+                    Text("Current Battery Temperature is: ")
+                    Text("\(session.agv.temperature) °C")
+                    Text("Current Battery Voltage is: ")
+                    Text("\(session.agv.voltage) V")
+                }
+                Section {
+                    Text("Last Timestamp:")
+                    Text("\(session.agv.timestamp)")
                 }
             }
         .onAppear(perform: getAgv)
-        .navigationBarTitle(Text("AdvancedAGV"))
-        .padding()
+        .navigationBarTitle(Text("Advanced AGV - \(session.agv.name)"), displayMode: .inline)
         }
     }
     

@@ -14,7 +14,7 @@ import FirebaseDatabase
 class FirebaseSession: ObservableObject {
     
     // Mark: - Properties
-    @Published var agv: Agv = Agv(name: "nicht vorhanden", temperature: 0, voltage: 0, timestamp: "nicht gemessen")
+    @Published var agvs: [Agv] = []
     
     var ref: DatabaseReference = Database.database().reference()
     
@@ -26,10 +26,10 @@ class FirebaseSession: ObservableObject {
     
     func observeAgv() {
         ref.observe(DataEventType.value) { (snapshot) in
-            self.agv = Agv(name: "nicht vorhanden", temperature: 0, voltage: 0, timestamp: "nicht gemessen")
+            self.agvs = []
             for child in snapshot.children {
                 if let snapshot = child as? DataSnapshot, let agv = Agv(snapshot: snapshot) {
-                    self.agv = agv
+                    self.agvs.append(agv)
                 }
             }
         }

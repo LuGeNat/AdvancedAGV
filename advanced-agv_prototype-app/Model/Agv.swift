@@ -9,8 +9,9 @@
 import SwiftUI
 import FirebaseDatabase
 
-class Agv: NSObject {
+struct Agv: Identifiable {
     
+    let id: UUID
     let ref: DatabaseReference?
     let key: String
     let name: String
@@ -19,6 +20,7 @@ class Agv: NSObject {
     let timestamp: String
     
     init(name: String, temperature: Int, voltage: Int, timestamp: String, key: String = "") {
+        self.id = UUID()
         self.ref = nil
         self.key = ""
         self.name = name
@@ -29,6 +31,7 @@ class Agv: NSObject {
     
     init?(snapshot: DataSnapshot) {
         guard let value = snapshot.value as? [String: AnyObject], let name = value["name"] as? String, let temperature = value["temperature"] as? Int, let voltage = value["voltage"] as? Int, let timestamp = value["timestamp"] as? String else { return nil }
+        self.id = UUID()
         self.ref = snapshot.ref
         self.key = snapshot.key
         self.name = name

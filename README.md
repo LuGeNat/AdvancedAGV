@@ -22,4 +22,4 @@ Required Software: Python3, pip, [Pyrebase](https://github.com/thisbejim/Pyrebas
 So in Terminal, please run:
 
 * `pip install pyrebase`
-* `python3 send_data_to_agv_database.py``
+* `python3 send_data_to_agv_database.py`

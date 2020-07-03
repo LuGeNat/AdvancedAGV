@@ -14,7 +14,7 @@ struct AgvDetailView: View {
     
     var body: some View {
         Form {
-            Section {
+            Section(header: Text("")) {
                 SplitRow(leftText: "AGV name:", rightText: agv.name)
             }
             Section {

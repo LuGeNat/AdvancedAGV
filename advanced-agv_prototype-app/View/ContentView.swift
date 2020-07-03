@@ -62,7 +62,7 @@ struct ContentView: View {
     
     /// return a string with warning sign in case of high temperature
     func getCheckedTemperature(_ temperature: Int) -> String {
-        return temperature > 37 ? "⚠️ \(temperature)°C" : "\(temperature)°C"
+        return temperature > 40 ? "⚠️ \(temperature)°C" : "\(temperature)°C"
     }
     
     /// configure appearance of Navigation Bar and Table View Cells

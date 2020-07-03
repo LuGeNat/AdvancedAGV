@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,17 @@
 		F5421159249904E8003FF8B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5421158249904E8003FF8B3 /* Assets.xcassets */; };
 		F542115C249904E8003FF8B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F542115B249904E8003FF8B3 /* Preview Assets.xcassets */; };
 		F542115F249904E8003FF8B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F542115D249904E8003FF8B3 /* LaunchScreen.storyboard */; };
+		F592612024A20BA200E1F524 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F592611F24A20BA100E1F524 /* GoogleService-Info.plist */; };
+		F5E98B60249F8AAE00DEDDAA /* Agv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E98B5F249F8AAE00DEDDAA /* Agv.swift */; };
+		F5E98B64249F933400DEDDAA /* FirebaseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E98B63249F933400DEDDAA /* FirebaseSession.swift */; };
+		F5F5B29524A607E800E32FF8 /* AgvDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5B29424A607E800E32FF8 /* AgvDetailView.swift */; };
+		F5F5B29824A6080900E32FF8 /* SplitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5B29724A6080900E32FF8 /* SplitRow.swift */; };
+		FC2B6CD66B80D54C540E8444 /* Pods_advanced_agv_prototype_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC8D548DC4D558AE543A228 /* Pods_advanced_agv_prototype_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AD13D9FBB96672B458E1098 /* Pods-advanced-agv_prototype-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-advanced-agv_prototype-app.debug.xcconfig"; path = "Target Support Files/Pods-advanced-agv_prototype-app/Pods-advanced-agv_prototype-app.debug.xcconfig"; sourceTree = "<group>"; };
+		F499ED460101C47EA9ABA03A /* Pods-advanced-agv_prototype-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-advanced-agv_prototype-app.release.xcconfig"; path = "Target Support Files/Pods-advanced-agv_prototype-app/Pods-advanced-agv_prototype-app.release.xcconfig"; sourceTree = "<group>"; };
 		F542114F249904E5003FF8B3 /* advanced-agv_prototype-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "advanced-agv_prototype-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5421152249904E5003FF8B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5421154249904E5003FF8B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		F542115B249904E8003FF8B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F542115E249904E8003FF8B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5421160249904E8003FF8B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F592611F24A20BA100E1F524 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5E98B5F249F8AAE00DEDDAA /* Agv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agv.swift; sourceTree = "<group>"; };
+		F5E98B63249F933400DEDDAA /* FirebaseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSession.swift; sourceTree = "<group>"; };
+		F5F5B29424A607E800E32FF8 /* AgvDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgvDetailView.swift; sourceTree = "<group>"; };
+		F5F5B29724A6080900E32FF8 /* SplitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitRow.swift; sourceTree = "<group>"; };
+		FAC8D548DC4D558AE543A228 /* Pods_advanced_agv_prototype_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_advanced_agv_prototype_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2B6CD66B80D54C540E8444 /* Pods_advanced_agv_prototype_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56129DBA7434C3E22F8B58A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AD13D9FBB96672B458E1098 /* Pods-advanced-agv_prototype-app.debug.xcconfig */,
+				F499ED460101C47EA9ABA03A /* Pods-advanced-agv_prototype-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1F1EC8756CE5148DD7085A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8D548DC4D558AE543A228 /* Pods_advanced_agv_prototype_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5421146249904E5003FF8B3 = {
 			isa = PBXGroup;
 			children = (
 				F5421151249904E5003FF8B3 /* advanced-agv_prototype-app */,
 				F5421150249904E5003FF8B3 /* Products */,
+				56129DBA7434C3E22F8B58A0 /* Pods */,
+				F1F1EC8756CE5148DD7085A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +90,14 @@
 		F5421151249904E5003FF8B3 /* advanced-agv_prototype-app */ = {
 			isa = PBXGroup;
 			children = (
-				F5421152249904E5003FF8B3 /* AppDelegate.swift */,
+				F5F5B29324A607C000E32FF8 /* View */,
+				F5E98B5E249F86EB00DEDDAA /* Model */,
+				F5E98B5D249F862700DEDDAA /* Session */,
 				F5421154249904E5003FF8B3 /* SceneDelegate.swift */,
-				F5421156249904E5003FF8B3 /* ContentView.swift */,
+				F5421152249904E5003FF8B3 /* AppDelegate.swift */,
 				F5421158249904E8003FF8B3 /* Assets.xcassets */,
 				F542115D249904E8003FF8B3 /* LaunchScreen.storyboard */,
+				F592611F24A20BA100E1F524 /* GoogleService-Info.plist */,
 				F5421160249904E8003FF8B3 /* Info.plist */,
 				F542115A249904E8003FF8B3 /* Preview Content */,
 			);
@@ -75,6 +112,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F5E98B5D249F862700DEDDAA /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				F5E98B63249F933400DEDDAA /* FirebaseSession.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		F5E98B5E249F86EB00DEDDAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5E98B5F249F8AAE00DEDDAA /* Agv.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5F5B29324A607C000E32FF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5421156249904E5003FF8B3 /* ContentView.swift */,
+				F5F5B29424A607E800E32FF8 /* AgvDetailView.swift */,
+				F5F5B29724A6080900E32FF8 /* SplitRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5421163249904E8003FF8B3 /* Build configuration list for PBXNativeTarget "advanced-agv_prototype-app" */;
 			buildPhases = (
+				528357323209EF3E36713F08 /* [CP] Check Pods Manifest.lock */,
 				F542114B249904E5003FF8B3 /* Sources */,
 				F542114C249904E5003FF8B3 /* Frameworks */,
 				F542114D249904E5003FF8B3 /* Resources */,
+				94E9BD59AE329B2464FA6A8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F542115F249904E8003FF8B3 /* LaunchScreen.storyboard in Resources */,
+				F592612024A20BA200E1F524 /* GoogleService-Info.plist in Resources */,
 				F542115C249904E8003FF8B3 /* Preview Assets.xcassets in Resources */,
 				F5421159249904E8003FF8B3 /* Assets.xcassets in Resources */,
 			);
@@ -141,13 +207,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		528357323209EF3E36713F08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-advanced-agv_prototype-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94E9BD59AE329B2464FA6A8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-advanced-agv_prototype-app/Pods-advanced-agv_prototype-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-advanced-agv_prototype-app/Pods-advanced-agv_prototype-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-advanced-agv_prototype-app/Pods-advanced-agv_prototype-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F542114B249904E5003FF8B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F5B29824A6080900E32FF8 /* SplitRow.swift in Sources */,
 				F5421153249904E5003FF8B3 /* AppDelegate.swift in Sources */,
 				F5421155249904E5003FF8B3 /* SceneDelegate.swift in Sources */,
+				F5F5B29524A607E800E32FF8 /* AgvDetailView.swift in Sources */,
+				F5E98B64249F933400DEDDAA /* FirebaseSession.swift in Sources */,
+				F5E98B60249F8AAE00DEDDAA /* Agv.swift in Sources */,
 				F5421157249904E5003FF8B3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +394,7 @@
 		};
 		F5421164249904E8003FF8B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD13D9FBB96672B458E1098 /* Pods-advanced-agv_prototype-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +414,7 @@
 		};
 		F5421165249904E8003FF8B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F499ED460101C47EA9ABA03A /* Pods-advanced-agv_prototype-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

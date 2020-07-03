@@ -10,6 +10,7 @@ In Terminal, you need to run:
 
 * `cd desiredDirectory`
 * `git clone git@github.com:LuGeNat/AdvancedAGV.git`
+* `cd AdvancedAGV`
 * `pod install`
 * `open advanced-agv_prototype-app.xcworkspace`
 * Press `Cmd` + `r` to run the project in simulator

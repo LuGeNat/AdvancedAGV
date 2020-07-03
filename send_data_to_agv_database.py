@@ -22,7 +22,7 @@ def update_agv(number):
   temperature = rnd.randint(25,45)
   voltage = rnd.uniform(24.0,25.0)
   timestamp = "{:%Y-%m-%d %H:%M:%S}".format(datetime.datetime.now())
-  data = {"name: "agv_%s" % number,
+  data = {"name": "agv_%s" % number,
           "temperature": temperature,
           "voltage": voltage,
           "timestamp": timestamp}
